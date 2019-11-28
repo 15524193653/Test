@@ -1,0 +1,10 @@
+pipeline {
+    agent any
+    stages{
+        stage('Pull Git Demo') {
+            steps{
+             git credentialsId: '8d2157be-a7d1-4925-85e0-888bf2905e6e', url: 'https://github.com/15524193653/test.git'
+            }
+        }
+   }
+}
